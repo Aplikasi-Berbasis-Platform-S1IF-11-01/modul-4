@@ -134,7 +134,7 @@ Kelas : IF-11-REG01
 </html>
 ```
 
-
+**Code CSS(style.css) :**
 ```css
 /*
 Nama : Rizal Dwi Anggoro
