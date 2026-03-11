@@ -7,7 +7,7 @@
 
   <br />
 
-  <h3>MODUL 3 <br>
+  <h3>MODUL 4 <br>
   HTML
   </h3>
 
@@ -514,3 +514,5 @@ Malam yang lebih baik dari seribu bulan.
 Output:
 ![Gambar 7](Images/Tugas.png)
 ![Gambar 8](Images/Tugas1.png)
+Daeskripsi Program:
+Program ini merupakan halaman web bertema Marhaban Ya Ramadan yang dibuat menggunakan HTML, CSS, dan framework Bootstrap. HTML digunakan untuk membangun struktur halaman seperti bagian hero, judul ucapan Ramadan, teks doa, serta section yang menampilkan keutamaan Ramadan. CSS digunakan untuk mengatur tampilan visual halaman seperti warna, background gambar, efek bayangan teks, serta pembuatan elemen dekoratif seperti bulan sabit menggunakan pseudo-element. Selain itu, program juga memanfaatkan CSS Variable (:root) untuk pengaturan warna tema, Flexbox untuk penataan posisi elemen, dan komponen Bootstrap seperti container, row, col, dan card untuk membuat layout yang rapi dan responsif. Halaman ini dirancang agar menampilkan ucapan Ramadan dengan tampilan yang menarik, modern, dan mudah dibaca.
