@@ -80,7 +80,6 @@ Berikut adalah kode program UNGUIDED:
                         Nim    : 2311102049
                         Kelas  : IF-11-REG01
             ----->
-            
     <div class="container mt-4">
         <div class="p-5 text-center bg-success text-white rounded-3 shadow-sm position-relative overflow-hidden">
             
@@ -120,15 +119,15 @@ Berikut adalah kode program UNGUIDED:
                         <ul class="list-group list-group-flush mt-2">
                             <li class="list-group-item d-flex justify-content-between align-items-center bg-light rounded mb-2">
                                 <strong>Imsak</strong>
-                                <span class="badge bg-success rounded-pill fs-6">04:15 WIB</span>
+                                <span class="badge bg-success rounded-pill fs-6">04:20 WIB</span>
                             </li>
                             <li class="list-group-item d-flex justify-content-between align-items-center bg-light rounded mb-2">
                                 <strong>Subuh</strong>
-                                <span class="badge bg-success rounded-pill fs-6">04:25 WIB</span>
+                                <span class="badge bg-success rounded-pill fs-6">04:30 WIB</span>
                             </li>
                             <li class="list-group-item d-flex justify-content-between align-items-center bg-light rounded">
                                 <strong>Maghrib (Buka Puasa)</strong>
-                                <span class="badge bg-success rounded-pill fs-6">17:55 WIB</span>
+                                <span class="badge bg-success rounded-pill fs-6">18:05 WIB</span>
                             </li>
                         </ul>
                     </div>
