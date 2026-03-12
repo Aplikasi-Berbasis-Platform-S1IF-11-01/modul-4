@@ -98,7 +98,7 @@ Tugas 4, Buat halaman ramadan dan gunakan bootstrap (sebisa mungkin tanpa meggun
 
 ### Hasil Output
 
-![Gambar Hasil Output](assets/hasil.png)
+![Gambar Hasil Output](assets/hasilOutput.png)
 
 ### Penjelasan Kode HTML
 
