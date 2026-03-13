@@ -55,7 +55,7 @@ Beberapa kelebihan utama dari penggunaan Bootstrap antara lain:
 
 Berikut ini adalah implementasi tabel berdasarkan struktur dasar HTML murni beserta hasil tampilannya.
 
-### Kode HTML (`table.html`)
+### Kode HTML (`Tugas4.html`)
 
 ```html
 <!DOCTYPE html>
