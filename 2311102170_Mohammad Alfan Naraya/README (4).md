@@ -118,45 +118,40 @@ Berikut merupakan implementasi kartu ucapan Ramadhan berbasis _Bootstrap 5 Utili
 
 ### Hasil Tampilan (Screenshot)
 
-![Hasil Tampilan Bootstrap](assets/1.jpg)
+![Hasil Tampilan Bootstrap](assets/output.png)
 
 ### Penjelasan Code
 
-- Pada bagian **head**, dilakukan pemanggilan _library_ **Bootstrap 5** melalui metode **Content Delivery Network (CDN)** menggunakan tag `<link>`. Library ini menyediakan berbagai komponen UI, sistem grid, serta _utility class_ yang digunakan untuk membangun tampilan tanpa perlu menambahkan file CSS tambahan.
+### 1. Struktur Pembungkus Utama (Layout)
 
-- Pada tag **`<body>`**, digunakan class `bg-dark` untuk memberikan latar belakang halaman berwarna gelap. Hal ini bertujuan agar kartu ucapan yang berada di tengah halaman terlihat lebih menonjol secara visual.
+* **`vh-100`**: (**Vertical Height 100%**) Memastikan tinggi halaman tepat memenuhi satu layar penuh tanpa terpotong.
+* **`d-flex align-items-center`**: (**Flexbox**) Berfungsi untuk menempatkan kartu ucapan tepat di tengah layar secara vertikal (atas-bawah).
+* **`bg-success bg-gradient`**: (**Background**) Memberikan warna dasar hijau khas Ramadan dengan sentuhan gradasi halus bawaan Bootstrap.
+* **`container`**: (**Wrapper**) Menjaga agar konten kartu tidak melebar hingga menyentuh pinggir layar dan tetap rapi di tengah secara responsif.
 
-- Pada elemen **`container`**, digunakan kombinasi _utility class_ `d-flex vh-100 justify-content-center align-items-center`.
+### 2. Komponen Kartu (The Card)
+* **`card shadow-lg`**: Memberikan efek bayangan tebal agar kartu terlihat menonjol/melayang.
+* **`border-0 rounded-5`**: Menghilangkan garis tepi dan memberikan lengkungan sudut yang modern.
+* **`overflow-hidden`**: Memastikan konten di dalam kartu mengikuti bentuk lengkungan sudut kartu.
 
-  - `d-flex` mengaktifkan **Flexbox layout**.
-  - `vh-100` membuat tinggi elemen menjadi **100% tinggi viewport**.
-  - `justify-content-center` memposisikan konten ke **tengah secara horizontal**.
-  - `align-items-center` memposisikan konten ke **tengah secara vertikal**.  
-    Dengan kombinasi ini, kartu ucapan akan selalu berada tepat di tengah halaman.
+### 3. Header & Ikon
+* **`card-header bg-white border-0`**: Header bersih tanpa garis pembatas yang menyatu dengan badan kartu.
+* **`bi-moon-stars-fill`**: Menggunakan ikon bulan bintang dari *Bootstrap Icons*.
+* **`text-warning`**: Memberikan warna kuning/emas cerah pada ikon.
+* **`display-2`**: Ukuran tipografi ekstra besar untuk fokus utama pada ikon.
 
-- Pada elemen **`.card`**, digunakan komponen kartu bawaan Bootstrap untuk membentuk struktur utama kartu ucapan. Beberapa _utility class_ ditambahkan untuk meningkatkan tampilan visual, antara lain:
+### 4. Tipografi & Isi (Typography)
+* **`fw-bold` & `fw-light`**: Memberikan kontras ketebalan teks untuk hirarki informasi yang jelas.
+* **`text-success`**: Mengharmonisasikan warna teks dengan tema latar belakang.
+* **`lh-lg`**: (*Line Height Large*) Memberikan spasi antar baris kalimat agar pesan lebih nyaman dibaca.
+* **`hr w-25 mx-auto`**: Garis pemisah minimalis yang berada tepat di tengah.
 
-  - `text-center` untuk membuat seluruh teks rata tengah.
-  - `shadow-lg` untuk memberikan efek bayangan yang lebih tegas pada kartu.
-  - `rounded-4` untuk membuat sudut kartu lebih melengkung.
-  - `border-0` untuk menghilangkan garis batas default pada kartu.
+### 5. Bagian Penutup (Footer & Nama)
+* **`mt-4 pt-4 border-top`**: Memberikan pemisah visual antara pesan ucapan dan nama pengirim.
+* **`text-uppercase`**: Memberikan kesan estetik minimalis pada teks "Salam Hangat".
+* **`card-footer bg-warning`**: Aksen warna kuning di bagian bawah sebagai penyeimbang visual.
 
-- Pada bagian **`.card-body`**, digunakan beberapa _utility class_ untuk mempercantik tampilan kartu, yaitu:
-
-  - `bg-success` untuk memberikan warna latar belakang hijau.
-  - `text-light` agar warna teks menjadi terang sehingga kontras dengan latar.
-  - `rounded-4` untuk menjaga sudut dalam kartu tetap melengkung.
-  - `p-5` untuk memberikan jarak **padding** yang cukup di dalam kartu agar isi tidak terlalu rapat.
-
-- Pada elemen teks di dalam kartu, beberapa _utility class_ Bootstrap dimanfaatkan:
-
-  - `fw-bold` untuk membuat judul tampil lebih tebal.
-  - `mb-3` dan `mb-4` untuk mengatur **jarak antar elemen** menggunakan margin bawah.
-  - `fw-semibold` untuk menegaskan teks pada bagian identitas.
-
-- Elemen **`<hr>`** digunakan sebagai pemisah visual antara pesan ucapan Ramadhan dan informasi identitas pembuat kartu, dengan tambahan class `border-light` agar garis pemisah tetap terlihat jelas di atas latar belakang hijau.
-
-Secara keseluruhan, seluruh desain kartu ucapan dibuat hanya dengan memanfaatkan **komponen dan _utility class_ Bootstrap 5**, tanpa menambahkan file CSS eksternal atau stylesheet khusus.
+---
 
 ## Refrensi
 
