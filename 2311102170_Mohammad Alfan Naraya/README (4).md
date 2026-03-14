@@ -12,8 +12,8 @@
   <br />
   <h3>Disusun Oleh :</h3>
   <p>
-    <strong>Nadhif Atha Zaki</strong><br>
-    <strong>2311102007</strong><br>
+    <strong>Mohammad Alfan Naraya</strong><br>
+    <strong>2311102170</strong><br>
     <strong>S1 IF-11-01</strong>
   </p>
   <br />
@@ -35,70 +35,84 @@
 
 ## 1. Dasar Teori
 
-**Bootstrap** merupakan sebuah _framework front-end_ **open-source** yang sangat populer dan digunakan untuk mempercepat proses pembuatan antarmuka website maupun aplikasi web. Framework ini menyediakan berbagai template desain berbasis **HTML, CSS, dan JavaScript** yang siap digunakan untuk membangun berbagai elemen antarmuka seperti tipografi, formulir, tombol, navigasi, serta komponen UI lainnya.
+**Bootstrap**
+adalah salah satu framework CSS paling populer di dunia yang digunakan untuk mengembangkan situs web yang responsif (responsive) dan mengutamakan perangkat seluler (mobile-first).
 
-Salah satu fitur utama Bootstrap adalah **sistem Grid Responsif**. Sistem ini memanfaatkan struktur **container**, **row**, dan **column** untuk mengatur tata letak halaman. Dengan sistem ini, tampilan website dapat menyesuaikan diri secara otomatis dengan berbagai ukuran layar perangkat, seperti komputer, tablet, maupun _smartphone_.
+Secara sederhana, Bootstrap adalah kumpulan "potongan kode" siap pakai (CSS dan JavaScript) yang memungkinkan pengembang membangun antarmuka web dengan cepat tanpa harus menulis kode dari nol.
 
 Beberapa keunggulan utama dari penggunaan Bootstrap antara lain:
 
 1. **Efisiensi Waktu**  
-   _Developer_ tidak perlu menulis kode CSS dasar dari awal, seperti pengaturan margin, penggunaan _flexbox_, desain _card_, dan lain-lain.
+   Tidak perlu menulis ribuan baris CSS secara manual.
 
 2. **Konsistensi Tampilan**  
-   Bootstrap membantu memastikan tampilan antarmuka tetap konsisten ketika dibuka di berbagai jenis _browser_.
+   Menjamin tampilan elemen tetap sama di berbagai browser (Chrome, Safari, Firefox).
 
 3. **Responsif Secara Default**  
-   Sebagian besar komponen Bootstrap dirancang dengan pendekatan **mobile-first**, sehingga tampilan sudah responsif sejak awal pengembangan.
+   Sebagian besar komponen Bootstrap dirancang dengan pendekatan **mobile-first**, Strategi desain yang memprioritaskan perangkat layar kecil terlebih dahulu, kemudian ditingkatkan untuk layar besar. sehingga tampilan sudah responsif sejak awal pengembangan.
 
 Bootstrap dapat digunakan secara **offline** dengan mengunduh _source file_ dari situs resminya, atau secara **online** melalui layanan **Content Delivery Network (CDN)**.
 
 ## 2. Penjelasan Kode HTML
 
-Berikut merupakan implementasi kartu ucapan Ramadhan berbasis _Native Bootstrap 5_ murni dengan penggunaan berbagai _utilities class_ tanpa menyertakan dokumen CSS tambahan apa pun, beserta hasil eksekusinya.
+Berikut merupakan implementasi kartu ucapan Ramadhan berbasis _Bootstrap 5 Utility-First, di mana hampir semua pengaturan tampilan dilakukan langsung di dalam atribut class_tanpa menyertakan dokumen CSS tambahan apa pun, beserta hasil eksekusinya.
 
-### Kode HTML (`ramadan.html`)
+### Kode HTML (`modul4.html`)
 
 ```html
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucapan Ramadan 1447H</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+</head>
+<body class="bg-success bg-gradient vh-100 d-flex align-items-center">
 
-    <title>Kartu Ucapan Ramadhan</title>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-11 col-sm-9 col-md-7 col-lg-5 text-center">
+                
+                <div class="card shadow-lg border-0 rounded-5 overflow-hidden">
+                    
+                    <div class="card-header bg-white border-0 pt-5">
+                        <i class="bi bi-moon-stars-fill text-warning display-2"></i>
+                        <h2 class="fw-bold text-success mt-3 mb-0">RAMADAN KAREEM</h2>
+                        <small class="text-muted fw-light">1447 HIJRIAH</small>
+                    </div>
 
-    <!-- Bootstrap 5 CDN -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-  </head>
+                    <div class="card-body px-4 px-md-5 pb-5 bg-white">
+                        <hr class="w-25 mx-auto mb-4 text-success border-2 opacity-50">
+                        
+                        <h1 class="h4 fw-bold text-dark mb-3">Selamat Menunaikan Ibadah Puasa</h1>
+                        
+                        <p class="card-text text-secondary lh-lg mb-4">
+                            Semoga di bulan yang penuh cahaya ini, setiap langkah kita diberkahi, 
+                            setiap doa didengarkan, dan hati kita dipenuhi dengan kedamaian 
+                            serta rasa syukur yang mendalam.
+                        </p>
 
-  <body class="bg-dark">
-    <div
-      class="container d-flex vh-100 justify-content-center align-items-center"
-    >
-      <div
-        class="card text-center shadow-lg rounded-4 border-0"
-        style="max-width: 420px;"
-      >
-        <div class="card-body bg-success text-light rounded-4 p-5">
-          <h2 class="fw-bold mb-3">🌙 Ramadhan Kareem</h2>
+                        <div class="mt-4 pt-4 border-top">
+                            <p class="small text-muted mb-1 text-uppercase" style="letter-spacing: 2px;">Salam Hangat</p>
+                            <h5 class="fw-bold text-success mb-0">Mohammad Alfan Naraya</h5>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer bg-warning border-0 py-2"></div>
+                </div>
 
-          <p class="mb-4">
-            Semoga bulan suci Ramadhan membawa keberkahan, kedamaian, dan
-            ampunan bagi kita semua. Selamat menjalankan ibadah puasa.
-          </p>
+                <p class="mt-4 text-white opacity-75 small">
+                    <i class="bi bi-geo-alt-fill me-1"></i> Purwokerto, 2026
+                </p>
 
-          <hr class="border-light" />
-
-          <p class="mb-1 fw-semibold">Nama: Nadhif Atha Zaki</p>
-
-          <p class="mb-0">NIM: 2311102007</p>
+            </div>
         </div>
-      </div>
     </div>
-  </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
 ```
 
