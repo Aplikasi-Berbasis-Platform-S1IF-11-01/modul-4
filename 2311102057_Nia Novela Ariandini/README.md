@@ -40,7 +40,7 @@
 
 Salah satu fitur utama Bootstrap adalah adanya **sistem grid responsif**. Sistem ini memanfaatkan struktur **container**, **row**, dan **column** untuk mengatur tata letak halaman. Dengan sistem tersebut, tampilan website dapat menyesuaikan secara otomatis dengan berbagai ukuran layar, mulai dari laptop, tablet, hingga smartphone.
 
-Beberapa kelebihan dari Bootstrap antara lain:
+Beberapa kelebihan dari Bootstrap antara lain :
 
 1. **Mempermudah Proses Pengembangan**  
    Bootstrap menyediakan banyak class siap pakai sehingga developer tidak perlu menulis seluruh kode tampilan dari awal.
@@ -57,7 +57,7 @@ Bootstrap dapat digunakan dengan dua cara, yaitu dengan mengunduh file Bootstrap
 
 ## 2. Penjelasan Kode HTML
 
-### Kode HTML (`ramadhan.html`)
+### Kode HTML (`tugas-4_2311102057.html`)
 
 ```html
 <!DOCTYPE html>
@@ -275,7 +275,7 @@ menunjukkan bahwa dokumen menggunakan standar **HTML5**.
 Tag `<html lang="id">` menandakan bahwa bahasa utama yang 
 digunakan pada halaman tersebut adalah **Bahasa Indonesia**.
 
-Di dalam bagian `<head>` terdapat beberapa elemen penting, yaitu:
+Di dalam bagian `<head>` terdapat beberapa elemen penting, yaitu :
 
 - `<meta charset="UTF-8">` digunakan agar karakter teks dapat 
   ditampilkan dengan benar.
