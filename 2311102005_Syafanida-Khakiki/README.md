@@ -118,7 +118,6 @@ Untuk memperindah tampilan teks pada halaman web dapat menggunakan layanan seper
 ```
 
 
-
 ### Kode HTML (`ramadan.html`)
 
 # 3. Tampilan Hasil
@@ -140,7 +139,5 @@ Pada tag <body> digunakan class Bootstrap seperti bg-success dan bg-gradient unt
 
 **Container dan Layout**
 Elemen <div class="container"> digunakan sebagai wadah utama konten agar tampilan lebih rapi dan berada di tengah halaman. Class d-flex, align-items-center, dan justify-content-center digunakan untuk memposisikan konten agar berada di tengah layar.
-
-**Judul Halaman**
 Tag <h1> digunakan untuk menampilkan judul “Ramadan Kareem”. Font judul menggunakan Berkshire Swash.
 
