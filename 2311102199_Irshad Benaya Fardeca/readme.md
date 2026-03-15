@@ -424,5 +424,7 @@ PEMROGRAMAN WEB 39
 </html>
 ```
 
+Kode HTML dan CSS tersebut digunakan untuk membuat halaman web ucapan Ramadan Kareem 1447 H dengan menggunakan Bootstrap. Bagian <head> memuat metadata, Bootstrap CDN, dan Google Fonts untuk mempercantik tampilan teks. CSS digunakan untuk mengatur tema warna, background gambar dengan efek gradient, serta menempatkan konten di tengah halaman. Di dalam <body>, struktur Bootstrap seperti container, row, dan col digunakan untuk menata teks ucapan Ramadan, tulisan Arab. 
+
 #### Output:
 <img src="asset/output.png"/>
