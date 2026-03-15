@@ -125,19 +125,20 @@ Gambar berikut menunjukkan tampilan tabel di browser:
 <img src="ss-hasil.png" width="900">
 
 # 4. Penjelasan Kode
-**Struktur Dasar HTML**
-Pada bagian awal terdapat deklarasi <!DOCTYPE html> yang berfungsi untuk memberi tahu browser bahwa dokumen menggunakan HTML5. Tag <html>, <head>, dan <body> digunakan sebagai struktur utama halaman web.
+1. **Struktur Dasar HTML**<br>
+Pada bagian awal terdapat deklarasi `<!DOCTYPE html>` yang berfungsi untuk memberi tahu browser bahwa dokumen menggunakan HTML5. Tag <html>, <head>, dan <body> digunakan sebagai struktur utama halaman web.
 
-**Menghubungkan Bootstrap**
+2. **Menghubungkan Bootstrap**<br>
 Pada bagian <head> terdapat link CDN dari Bootstrap yang digunakan untuk mengambil library Bootstrap sehingga berbagai komponen dan class Bootstrap dapat digunakan dalam halaman.
 
-**Menambahkan Font**
+3. **Menambahkan Font**<br>
 Kode juga menambahkan link dari Google Fonts untuk menggunakan font Berkshire Swash. Font ini digunakan pada judul agar tampilan lebih dekoratif dan sesuai dengan tema Ramadan.
 
-**Pengaturan Warna Latar**
-Pada tag <body> digunakan class Bootstrap seperti bg-success dan bg-gradient untuk memberikan warna latar hijau dengan efek gradasi yang identik dengan nuansa Ramadan.
+4. **Pengaturan Warna Latar**<br>
+Pada tag `<body>` digunakan class Bootstrap seperti bg-success dan bg-gradient untuk memberikan warna latar hijau dengan efek gradasi yang identik dengan nuansa Ramadan.
 
-**Container dan Layout**
-Elemen <div class="container"> digunakan sebagai wadah utama konten agar tampilan lebih rapi dan berada di tengah halaman. Class d-flex, align-items-center, dan justify-content-center digunakan untuk memposisikan konten agar berada di tengah layar.
-Tag <h1> digunakan untuk menampilkan judul “Ramadan Kareem”. Font judul menggunakan Berkshire Swash.
+5. **Container dan Layout**<br>
+Elemen `<div class="container">`digunakan sebagai wadah utama konten agar tampilan lebih rapi dan berada di tengah halaman. Class d-flex, align-items-center, dan justify-content-center digunakan untuk memposisikan konten agar berada di tengah layar.
+
+6. `Tag <h1>` digunakan untuk menampilkan judul “Ramadan Kareem”. Font judul menggunakan Berkshire Swash.
 
