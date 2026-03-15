@@ -43,9 +43,6 @@ Bootstrap juga memiliki grid system yang memungkinkan tata letak halaman menjadi
 Untuk memperindah tampilan teks pada halaman web dapat menggunakan layanan seperti Google Fonts. Pada halaman ini digunakan font Berkshire Swash yang memberikan tampilan dekoratif sehingga sesuai dengan nuansa tema Ramadan.
 
 # 2. Kode Program
-<img src="ss-hasil.png" width="900">
-
-### Kode HTML (`ramadan.html`)
 
 ```html
 <!DOCTYPE html>
@@ -118,6 +115,11 @@ Untuk memperindah tampilan teks pada halaman web dapat menggunakan layanan seper
 
 </html>
 ---
+```
+
+
+
+### Kode HTML (`ramadan.html`)
 
 # 3. Tampilan Hasil
 Gambar berikut menunjukkan tampilan tabel di browser:
