@@ -11,8 +11,8 @@
   <br />
   <h3>Disusun Oleh :</h3>
   <p>
-    <strong>Satrio Wibowo</strong><br>
-    <strong>2311102149</strong><br>
+    <strong>Azaria Nanda Putri</strong><br>
+    <strong>2311102147</strong><br>
     <strong>S1 IF-11-REG 01</strong>
   </p>
   <br />
