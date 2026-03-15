@@ -1,0 +1,250 @@
+<div align="center">
+  <br />
+  <h1>LAPORAN PRAKTIKUM <br>APLIKASI BERBASIS PLATFORM</h1>
+  <br />
+  <h3>MODUL 4 <br> BOOTSTRAP</h3>
+  <br />
+  <br />
+  <img src="logo.PNG" alt="Logo" width="300"> 
+  <br />
+  <br />
+  <br />
+  <br />
+  <h3>Disusun Oleh :</h3>
+  <p>
+    <strong>Agnes Refilina Fiska</strong><br>
+    <strong>2311102126</strong><br>
+    <strong>S1 IF-11-01</strong>
+  </p>
+  <br />
+  <h3>Dosen Pengampu :</h3>
+  <p>
+    <strong>Dimas Fanny Hebrasianto Permadi, S.ST., M.Kom</strong>
+  </p>
+  <br />
+  <br />
+    <h4>Asisten Praktikum :</h4>
+    <strong> Apri Pandu Wicaksono </strong> <br>
+    <strong>Rangga Pradarrell Fathi</strong>
+  <br />
+  <h3>LABORATORIUM HIGH PERFORMANCE
+ <br>FAKULTAS INFORMATIKA <br>UNIVERSITAS TELKOM PURWOKERTO <br>2026</h3>
+</div>
+
+---
+
+## 1. Dasar Teori
+
+**Bootstrap** merupakan kerangka kerja (framework) CSS sumber terbuka yang paling banyak diadopsi secara global untuk menciptakan situs web modern yang adaptif dan mengutamakan aksesibilitas pada perangkat seluler (mobile-first).
+
+Secara teknis, Bootstrap adalah pustaka besar berisi komponen kode CSS dan JavaScript yang sudah matang. Hal ini memungkinkan para pengembang untuk menyusun antarmuka pengguna (UI) dengan sistem bongkar-pasang komponen siap pakai, tanpa harus membangun setiap elemen visual dari titik nol.
+
+Beberapa keunggulan utama dari penggunaan Bootstrap antara lain:
+
+1. **Efisiensi Waktu**  
+   Memangkas waktu pengerjaan secara signifikan karena pengembang tidak perlu lagi menyusun ribuan baris kode CSS manual untuk elemen dasar.
+
+2. **Konsistensi Tampilan**  
+   Memastikan elemen visual seperti tombol, navigasi, dan formulir memiliki tampilan yang konsisten saat diakses melalui berbagai peramban (browser) populer.
+
+3. **Responsif Secara Default**  
+   Karena mengusung filosofi mobile-first—yaitu memprioritaskan desain untuk layar kecil sebelum menyesuaikannya ke layar lebar—seluruh komponen di dalamnya sudah memiliki kemampuan responsif secara bawaan.
+
+Bootstrap dapat digunakan secara **offline** dengan mengunduh _source file_ dari situs resminya, atau secara **online** melalui layanan **Content Delivery Network (CDN)**.
+
+## 2. Penjelasan Kode HTML
+
+Berikut merupakan implementasi kartu ucapan Ramadhan berbasis _Bootstrap 5 Utility-First, di mana hampir semua pengaturan tampilan dilakukan langsung di dalam atribut class_tanpa menyertakan dokumen CSS tambahan apa pun, beserta hasil eksekusinya.
+
+### Kode HTML (`Tugas4.html`)
+
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadan Kareem - Tugas 3 & 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --dark-green: #064e3b;
+            --gold: #d4af37;
+            --gold-light: #f9e297;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #f4f9f4;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .arabic { font-family: 'Amiri', serif; }
+
+        /* Hero Section dari Tugas 3 */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1542618953-29497042a5bc?q=80&w=2071&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            height: 75vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            border-bottom: 8px solid var(--gold);
+        }
+
+        /* Tombol THR Interaktif dari Tugas 4 */
+        .btn-thr {
+            background: var(--gold);
+            color: var(--dark-green);
+            font-weight: bold;
+            border: none;
+            padding: 18px 45px;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+            transition: all 0.3s ease;
+            animation: pulse-animation 2s infinite;
+        }
+
+        .btn-thr:hover {
+            background: var(--gold-light);
+            transform: scale(1.05);
+            color: #000;
+        }
+
+        @keyframes pulse-animation {
+            0% { box-shadow: 0 0 0 0px rgba(212, 175, 55, 0.7); }
+            100% { box-shadow: 0 0 0 20px rgba(212, 175, 55, 0); }
+        }
+
+        /* Modal Custom */
+        .modal-content {
+            border: none;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+        .modal-header-custom {
+            background: var(--dark-green);
+            color: var(--gold);
+            padding: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container text-center">
+            <span class="navbar-brand mx-auto h1 arabic">🌙 Ramadan Kareem 1447H</span>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h2 class="arabic display-1 text-warning mb-0">رمضان كريم</h2>
+            <h1 class="display-4 fw-bold mb-4">Selamat Menunaikan Ibadah Puasa</h1>
+            <p class="lead mb-5 opacity-75">Bulan penuh berkah, pintu ampunan dibuka lebar bagi kita semua.</p>
+            
+            <button type="button" class="btn-thr" data-bs-toggle="modal" data-bs-target="#modalTHR">
+                🎁 KLIK UNTUK AMBIL THR
+            </button>
+        </div>
+    </header>
+
+    <section class="container py-5">
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <div class="p-4 bg-white shadow rounded-4 border-0">
+                    <h3 class="mb-3">🕌</h3>
+                    <h5 class="fw-bold">Ibadah Tarawih</h5>
+                    <p class="small text-muted">Menghidupkan malam Ramadan dengan shalat berjamaah.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 bg-white shadow rounded-4 border-top border-4 border-warning">
+                    <h3 class="mb-3">📖</h3>
+                    <h5 class="fw-bold">Tadarus Online</h5>
+                    <p class="small text-muted">Khatamkan Al-Qur'an dan raih pahala berlipat ganda.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 bg-white shadow rounded-4 border-0">
+                    <h3 class="mb-3">🍲</h3>
+                    <h5 class="fw-bold">Sedekah Buka</h5>
+                    <p class="small text-muted">Berbagi kebahagiaan dengan memberi makan orang berbuka.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modalTHR" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow-lg">
+                <div class="modal-header-custom">
+                    <h1 class="display-3 mb-0">💸</h1>
+                    <h2 class="fw-bold arabic">بارك الله</h2>
+                    <h3 class="fw-bold">SELAMAT!</h3>
+                </div>
+                <div class="modal-body text-center p-5">
+                    <p class="fs-5">Selamat! Anda mendapatkan THR sebesar:</p>
+                    <div class="display-5 fw-bold text-success mb-4">Rp 1.500.000</div>
+                    <p class="text-muted small">"Sedekah yang paling utama adalah sedekah di bulan Ramadan."</p>
+                    <hr class="my-4">
+                    <button type="button" class="btn btn-dark btn-lg w-100 rounded-pill shadow" data-bs-dismiss="modal">Alhamdulillah, Terima Kasih!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 text-center mt-auto">
+        <p class="mb-0 opacity-50 small">Tugas 4 Web: Ramadan Interactive</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+```
+
+### Hasil Tampilan (Screenshot)
+
+![Hasil Tampilan Bootstrap](1.PNG)
+
+### Penjelasan Code
+
+### 1. Integrasi Library dan Font
+- Bootstrap 5 (via CDN): Digunakan untuk mempercepat pembuatan desain responsif, sistem grid, dan komponen interaktif seperti Modal dan Navbar.
+
+- Google Fonts: Memanggil font 'Amiri' untuk memberikan kesan kaligrafi Arab yang autentik dan font 'Lato' untuk teks konten agar mudah dibaca.
+
+### 2. Pengaturan Gaya Visual (CSS Custom)
+- **Variabel Warna** (:root): Menggunakan variabel seperti --dark-green dan --gold agar skema warna konsisten di seluruh elemen.
+
+- **Hero Section**: Menggunakan linear-gradient di atas gambar latar belakang (background-image) agar teks tetap kontras dan terbaca.
+
+- **Animasi Pulse**: Kelas .`btn-thr` memiliki `@keyframes pulse-animation` yang menciptakan efek bayangan bergetar secara terus-menerus untuk menarik perhatian pengguna agar mengeklik tombol tersebut.
+
+- **Transisi Interaktif**: Properti `transition: all 0.3s ease` pada tombol memberikan efek halus saat kursor diarahkan (hover).
+
+### 3. Struktur Konten (HTML)
+- **Navbar**: Menggunakan kelas .`navbar-dark` dan .`bg-dark` untuk menciptakan bar navigasi yang kontras dengan aksen teks Arab.
+
+- **Grid System**: Bagian <section class="container py-5"> menggunakan sistem baris (row) dan kolom (col-md-4) Bootstrap untuk menampilkan tiga kartu informasi secara sejajar pada layar desktop dan menumpuk secara otomatis pada layar seluler.
+
+- **Komponen Modal**: Elemen dengan ID modalTHR adalah jendela pop-up yang muncul saat tombol diklik. Ini memanfaatkan pustaka JavaScript dari Bootstrap (bootstrap.bundle.min.js) untuk menangani logika buka-tutup jendela tanpa perlu menulis skrip tambahan.
+
+## 4. Fitur Interaktif
+- **Trigger Modal**: Atribut data-bs-toggle="modal" dan data-bs-target="#modalTHR" pada tombol THR berfungsi sebagai penghubung otomatis antara elemen pemicu dan jendela dialog yang akan ditampilkan.
+
+- **Responsivitas**: Penggunaan kelas utilitas seperti py-5 (padding vertikal), `mb-4` (margin bawah), dan w-100 (lebar penuh) memastikan halaman terlihat rapi di berbagai ukuran perangkat.
+
+## Refrensi
+
+- [Materi Modul 4](https://drive.google.com/file/d/1TW5Y0AdzkVk24ThPUf1OQNs2Mnw3XNO5/view?usp=sharing)
