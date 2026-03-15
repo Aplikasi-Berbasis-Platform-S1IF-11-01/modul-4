@@ -35,8 +35,6 @@
 
 ## 1. Dasar Teori
 
-## Dasar Teori
-
 Bootstrap merupakan *front-end framework* gratis yang digunakan untuk mempercepat dan mempermudah pengembangan antarmuka web. Dalam modul praktikum dijelaskan bahwa Bootstrap menyediakan template desain berbasis HTML dan CSS untuk berbagai komponen seperti tipografi, form, button, navigasi, modal, dan *image carousel*, serta dilengkapi plugin JavaScript opsional. Selain itu, Bootstrap juga mendukung desain responsif sehingga tampilan website dapat menyesuaikan diri secara otomatis pada berbagai perangkat, mulai dari ponsel hingga desktop. Oleh karena itu, Bootstrap sangat sesuai digunakan dalam praktikum pemrograman web untuk membangun halaman yang rapi, modern, dan efisien. 
 
 Pemasangan Bootstrap dapat dilakukan dengan dua cara. Pertama, Bootstrap dapat diunduh langsung dari situs resminya lalu dipasang pada proyek web seperti memanggil *external style sheet*. Kedua, Bootstrap dapat digunakan melalui CDN (*Content Delivery Network*) dengan memanggil file CSS dan JavaScript secara online tanpa perlu mengunduh file framework terlebih dahulu. Cara CDN lebih praktis dan cepat diterapkan, meskipun membutuhkan koneksi internet agar tampilan Bootstrap dapat berjalan dengan baik. 
